@@ -11,4 +11,19 @@ body {
   overflow: hidden;
 }
 
-section
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #111;
+}
+
+section:before {
+  content: '';
+  position: absolute;
+  width: 30vw;
+  height: 30vh;
+  border: 5vw solid #ff4500;
+  border-radius: 50%;
+}
