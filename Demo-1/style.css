@@ -26,4 +26,6 @@ section:before {
   height: 30vh;
   border: 5vw solid #ff4500;
   border-radius: 50%;
+  box-shadow: 0 0 0 1vw #111,
+              0 0 0 1.3vw #87ceeb;
 }
