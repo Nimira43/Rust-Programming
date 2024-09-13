@@ -42,3 +42,7 @@ h2 {
   z-index: 5;
   transform: skewY(-7deg)
 }
+
+h2 span {
+  font-size: 12vw;
+}
