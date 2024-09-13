@@ -29,3 +29,16 @@ section:before {
   box-shadow: 0 0 0 1vw #111,
               0 0 0 1.3vw #87ceeb;
 }
+
+h2 {
+  position: absolute;
+  font-size: 10vw;
+  color: gold;
+  text-shadow: 2px 2px 0 #111,
+               4px 4px 0 #ff4500,
+               6px 6px 0 #111;
+  text-align: center;
+  line-height: 2em;
+  z-index: 5;
+  transform: skewY(-7deg)
+}
