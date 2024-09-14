@@ -7,7 +7,7 @@ fn main() {
     let float: f32 = 5.0;  
 
     let arch_1: usize = 5;
-    let arch_: isize =  5;
+    let arch_2: isize =  5;
 
     let char: char = 'a'
     let b: bool = true
@@ -18,6 +18,17 @@ fn main() {
     // type conversion
     let a: i32 = 10;
     let b: f64 = a as f64;
+
+    let fixed_str: &str = "Fixed length string";
+    let mut flexible_str: String = String::from("Growing string");
+
+    let mut array_1: [i32; 5] = [4, 5, 6, 7, 8];
+
+    let vec: Vec<i32> = vec![4, 5, 6, 7, 8];
+
+    let my_info: (&str, i32, &str, i32) = ("Salary", 40000, "Age", 40);
+    let salary_value: i32 = my_info.1;
+    let (salary: &str, salary_value: i32, age: &str, age_value: i32) = my_info;
 
 
 }
