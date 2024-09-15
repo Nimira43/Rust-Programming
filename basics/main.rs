@@ -1,6 +1,15 @@
-
+                                                                                                                                                                                                                                                                                                
 
 fn main() {
-  let message = "Hello Message";
+
+  let mut message = "Good Evening";
+  println!("{}", message);
+
+  message = "Hello Message";
+
   println!("Some text: {}", message);
+
+
+
+
 }
