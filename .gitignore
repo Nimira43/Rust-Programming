@@ -1,0 +1,16 @@
+# Rust build artifacts
+**/target/
+
+# IDE/editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.bak
+.DS_Store
+Thumbs.db
+
+# Optional: ignore Cargo.lock for libraries
+# But keep it committed for binaries (which you're building)
+
+

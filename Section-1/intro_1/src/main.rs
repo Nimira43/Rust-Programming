@@ -1,8 +1,6 @@
 fn main() {
-    let oranges = 4;
-    let apples = 5 + 6;
-    let fruits = oranges + apples;
-    println!("Bob has {} oranges.", oranges);
-    println!("There are {fruits} fruits.");
-    println!("There are {0} oranges and {1} apples.", oranges, apples);
+    let work_hours = 8;
+    println!("I am going to work for {work_hours} today.");
+
+    work_hours = 11;
 }

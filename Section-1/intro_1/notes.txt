@@ -1,3 +1,5 @@
+========================================================
+
 // This is a comment
 /*
 Multi
@@ -5,5 +7,20 @@ Line
 Comment
 */
 
+========================================================
+
 println!("Prints and goes to next line");
 print!("Prints and doesn't go to a new line");
+
+========================================================
+
+let oranges = 4;
+let apples = 5 + 6;
+let fruits = oranges + apples;
+let _not_used = "I am not being used!";
+println!("Bob has {} oranges.", oranges);
+println!("There are {fruits} fruits.");
+println!("There are {0} oranges and {1} apples.", oranges, apples);
+
+========================================================
+
