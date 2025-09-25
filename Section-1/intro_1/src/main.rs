@@ -3,5 +3,5 @@ fn main() {
     let apples = 5 + 6;
     let fruits = oranges + apples;
     println!("Bob has {} oranges.", oranges);
-    println!("There are {} fruits.", fruits);
+    println!("There are {fruits} fruits.");
 }
