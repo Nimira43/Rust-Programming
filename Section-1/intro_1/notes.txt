@@ -1,0 +1,9 @@
+// This is a comment
+/*
+Multi
+Line
+Comment
+*/
+
+println!("Prints and goes to next line");
+print!("Prints and doesn't go to a new line");
