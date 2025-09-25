@@ -1,0 +1,23 @@
+# Ignore the target directory (build artifacts)
+/target/
+
+# Ignore Cargo's package registry cache
+**/*.rs.bk
+
+# Ignore backup files
+*.swp
+*.swo
+*.bak
+
+# Ignore MacOS metadata
+.DS_Store
+
+# Ignore Windows metadata
+Thumbs.db
+
+# Ignore IDE/editor files
+.idea/
+.vscode/
+*.log
+
+
