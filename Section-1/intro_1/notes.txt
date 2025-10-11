@@ -23,4 +23,14 @@ println!("There are {fruits} fruits.");
 println!("There are {0} oranges and {1} apples.", oranges, apples);
 
 ========================================================
+Immutable and Mutable Variables
+-------------------------------
 
+let mut work_hours = 8;
+    println!("I am going to work for {work_hours} hours today.");
+
+    work_hours = 11;
+
+    println!("I am going to work for {work_hours} hours tomorrow.");
+
+=========================================================
