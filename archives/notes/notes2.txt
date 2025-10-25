@@ -11,3 +11,17 @@ rustc demo.rust
 Creating a project - cargo
 ---------------------
 cargo new demo2
+
+Building a project
+------------------
+cargo build
+
+Running a project
+-----------------
+cargo run
+
+Other commands
+--------------
+cargo clean
+cargo check
+cargo doc
