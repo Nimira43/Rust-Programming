@@ -34,3 +34,12 @@ let mut work_hours = 8;
     println!("I am going to work for {work_hours} hours tomorrow.");
 
 =========================================================
+
+fn main() {
+    let grams_of_flour = "84.57";
+    println!("{}", grams_of_flour);
+    let grams_of_flour = 84.57; // variable shadowing
+    println!("{}", grams_of_flour);
+    let grams_of_flour = 84; // variable shadowing
+    println!("{}", grams_of_flour);
+}

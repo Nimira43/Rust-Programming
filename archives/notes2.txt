@@ -1,0 +1,9 @@
+Check versions
+--------------
+rustc -V
+cargo -V
+
+Running files
+-------------
+rustc demo.rust
+./demo

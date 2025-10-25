@@ -1,5 +1,0 @@
-[workspace]
-resolver = "2"
-members = [
-  "Section-1/intro_1"
-]
