@@ -4,7 +4,15 @@ use std::io;
 /// This is used to document a Rust program
 
 fn main() {
-    // A simple Rust program
+    
+    //! # Input Program
+    //! 
+    //! ```rust
+    //! fn main()
+    //! ```
+    //! 
+    //! Reads user input and then prints it to the console
+
 
     let mut input = String::new();
     println!("Hello there!");
@@ -14,7 +22,9 @@ fn main() {
     line
     comment
     */
-
+    
+    // A single line comment
+    
     match io::stdin().read_line(&mut input) {
         Ok(_) => {
             println!("How is {}", input.trim());
