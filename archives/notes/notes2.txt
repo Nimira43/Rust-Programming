@@ -7,3 +7,7 @@ Running files
 -------------
 rustc demo.rust
 ./demo
+
+Creating a project - cargo
+---------------------
+cargo new demo2

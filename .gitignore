@@ -1,16 +1,28 @@
 # Rust build artifacts
-**/target/
+/target/
+/**/target/
 
-# IDE/editor files
-.vscode/
-.idea/
+# Cargo package files
+Cargo.lock
+**/Cargo.lock
+
+# Backup and temp files
+*.rs.bk
 *.swp
 *.swo
-*.bak
+*.tmp
+
+# IDE/editor folders
+.vscode/
+.idea/
+*.log
+
+# OS-specific
 .DS_Store
 Thumbs.db
 
-# Optional: ignore Cargo.lock for libraries
-# But keep it committed for binaries (which you're building)
+# By convention, ignore node_modules if you mix JS tooling
+node_modules/
+
 
 
