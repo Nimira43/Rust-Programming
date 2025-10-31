@@ -38,14 +38,23 @@ fn main() {
         println!(); // blank line between groups
     }
 
-    // Phase 3 - Qualifiers (Top 2)
+    // Phase 2 - Qualifiers (Top 2)
 
     let mut qualified: Vec<&str> = Vec::new();
 
     for group in &groups {
         qualified.push(group[0]); // 1st place
         qualified.push(group[1]); // 2nd place
-}
+    }
+
+    // Phase 2 - Play-Offs (3rd Place Teams)
+
+    let mut third_place: Vec<&str> = Vec::new();
+
+    for group in &groups {
+        third_place.push(group[2]); // 3rd place
+    }
+
 
 
 }
