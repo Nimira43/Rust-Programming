@@ -59,7 +59,11 @@ fn main() {
     qualified.push(third_place[0]);
     qualified.push(third_place[1]);
 
+    // Phase 2 - Full Qualifiers List
 
-
+    println!("Qualified Teams (24):");
+    for team in &qualified {
+        println!(" - {}", team);
+    }
 
 }
