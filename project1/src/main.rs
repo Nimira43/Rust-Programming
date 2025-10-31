@@ -1,8 +1,6 @@
 use std::os::windows::thread;
 
 fn main() {
-    
-
     let mut countries = vec!["Albania", "Andorra", "Armenia", "Austria", "Azerbaijan", "Belarus", "Belgium", "Bosnia", "Bulgaria", "Croatia", "Cyprus", "Czechia", "Denmark", "England", "Estonia", "Faroe Islands", "Finland", "France", "Georgia", "Germany", "Gibraltar", "Greece", "Hungary", "Iceland", "Israel", "Italy", "Kazakhstan", "Kosovo", "Latvia", "Liechtenstein", "Lithuania", "Luxembourg", "Malta", "Moldova", "Montenegro", "Netherlands", "North Macedonia", "Northern Ireland", "Norway", "Poland", "Portugal", "Republic of Ireland", "Romania", "Russia", "San Marino", "Scotland", "Serbia", "Slovakia", "Slovenia", "Spain", "Sweden", "Switzerland", "Türkiye", "Ukraine", "Wales"];
     
     use rand::seq::SliceRandom;
@@ -10,4 +8,9 @@ fn main() {
 
     let mut rng = thread_rng();
     countries.shuffle(&mut rng);
+
+    let groups: Vec<Vec<&str>> = countries
+        .chunks(5)
+        .map(|chunk| chunk.to_vec())
+        .collect();
 }
