@@ -1,3 +1,5 @@
+use std::os::windows::thread;
+
 fn main() {
     
 
@@ -5,4 +7,7 @@ fn main() {
     
     use rand::seq::SliceRandom;
     use rand::thread_rng;
+
+    let mut rng = thread_rng();
+    countries.shuffle(&mut rng);
 }
