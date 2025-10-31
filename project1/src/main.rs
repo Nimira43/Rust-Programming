@@ -38,4 +38,14 @@ fn main() {
         println!(); // blank line between groups
     }
 
+    // Phase 3 - Qualifiers (Top 2)
+
+    let mut qualified: Vec<&str> = Vec::new();
+
+    for group in &groups {
+        qualified.push(group[0]); // 1st place
+        qualified.push(group[1]); // 2nd place
+}
+
+
 }
