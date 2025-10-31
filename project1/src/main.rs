@@ -11,7 +11,7 @@ fn main() {
     let mut rng = thread_rng();
     countries.shuffle(&mut rng);
 
-    let groups: Vec<Vec<&str>> = countries
+    let mut groups: Vec<Vec<&str>> = countries
         .chunks(5)
         .map(|chunk| chunk.to_vec())
         .collect();
@@ -28,6 +28,14 @@ fn main() {
 
     for group in groups.iter_mut() {
         group.shuffle(&mut rng);
+    }
+
+    for (i, group) in groups.iter().enumerate() {
+        println!("🏆 Group {} Final Standings:", i + 1);
+        for (position, team) in group.iter().enumerate() {
+            println!("  {}. {}", position + 1, team);
+        }
+        println!(); // blank line between groups
     }
 
 }
