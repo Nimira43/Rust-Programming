@@ -55,6 +55,11 @@ fn main() {
         third_place.push(group[2]); // 3rd place
     }
 
+    third_place.shuffle(&mut rng);
+    qualified.push(third_place[0]);
+    qualified.push(third_place[1]);
+
+
 
 
 }
