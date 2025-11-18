@@ -14,6 +14,7 @@ fn main() {
     // let amount2 = 2147483648;         out of range
     let amount2 = -2147483648;
     // let amount2 = -2147483649;        out of range
-
+    let amount: i64 = 2147483648;
+    let amount: i64 = -2147483649;
 
 }
