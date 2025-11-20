@@ -18,5 +18,7 @@ impl Deck {
                 cards.push(format("{} of {}", value, suit))
             }
         }
+
+        Deck { cards }
     }
 }
