@@ -21,4 +21,10 @@ impl Deck {
 
         Deck { cards }
     }
+
+    fn print (&self) {
+        for (i, card) in self.cards.iter().enumerate() {
+            println!("{}: {}", i, card)
+        }
+    }
 }
