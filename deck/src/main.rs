@@ -46,4 +46,9 @@ impl Deck {
         let cards: Vec<String> = content.split(',').map(|s| s.to_string()).collect();
         Deck { cards }
     }
+
+    fn shuffle(&mut self) {
+        let mut rng = thread_rng();
+        self.cards.shuffle(&mut rng);
+    }
 }
