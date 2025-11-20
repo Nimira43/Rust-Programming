@@ -7,5 +7,7 @@ struct Deck {
 }
 
 impl Deck {
-    
+    fn new() -> Self {
+        let suits = vect["Spades", "Diamonds", "Hearts", "Clubs"]
+    }
 }
