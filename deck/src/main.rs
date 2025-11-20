@@ -1,6 +1,6 @@
 use std::fs;
-use rand::seq::SliceRandom
-use rand::thread_rng
+use rand::seq::SliceRandom;
+use rand::thread_rng;
 
 struct Deck {
     cards: Vec<String>
@@ -15,7 +15,7 @@ impl Deck {
 
         for suit in &suits {
             for value in &values {
-                cards.push(format("{} of {}", value, suit));
+                cards.push(format!("{} of {}", value, suit));
             }
         }
 
@@ -28,17 +28,17 @@ impl Deck {
         }  
     }
 
-    fn deal(&mut self, hand_size: usize) -> (Vec<String>0, Vec<String>) {
+    fn deal(&mut self, hand_size: usize) -> (Vec<String>, Vec<String>) {
         let hand : Vec<String> = self.cards.drain(0..hand_size.min(self.cards.len())).collect();
         (hand.clone(), self.cards.clone())
     }
 
     fn to_string(&self) -> String {
-        self.cards.join(",");
+        self.cards.join(",")
     }
 
     fn save_to_file(&self, filename: &str) {
-        fs::write(filename, self.to_string(0)).expect("Unable to write file");
+        fs::write(filename, self.to_string()).expect("Unable to write file");
     }
 
     fn load_from_file(filename: &str) -> Self {
@@ -51,4 +51,19 @@ impl Deck {
         let mut rng = thread_rng();
         self.cards.shuffle(&mut rng);
     }
+}
+
+fn main() {
+    let mut deck = Deck::new();
+    deck.shuffle();
+    deck.print();
+
+    let (hand, remaining) = deck.deal(5);
+    println!("\nDealt hand: {:?}", hand);
+    println!("Remaining cards: {}", remaining.len());
+
+    deck.save_to_file("deck.txt");
+    let loaded_deck = Deck::load_from_file("deck.txt");
+    println!("\nLoaded deck: ");
+    loaded_deck.print();
 }
