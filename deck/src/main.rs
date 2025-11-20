@@ -25,6 +25,8 @@ impl Deck {
     fn print (&self) {
         for (i, card) in self.cards.iter().enumerate() {
             println!("{}: {}", i, card)
-        }
+        }  
     }
+
+    fn deal(&mut self, hand_size: usize) -> (Vec<String>0, Vec<String>) {}
 }
