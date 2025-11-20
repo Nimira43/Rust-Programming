@@ -39,7 +39,10 @@ impl Deck {
 
     fn save_to_file(&self, filename: &str) {
         fs::write(filename, self.to_string(0)).expect("Unable to write file");
+    }
 
+    fn load_from_file(filename: &str) -> Self {
+        let content = fs::read_to_string(filename).expect("Unable to read file");
         
     }
 }
