@@ -5,3 +5,7 @@ use rand::thread_rng
 struct Deck {
     cards: Vec<String>
 }
+
+impl Deck {
+    
+}
