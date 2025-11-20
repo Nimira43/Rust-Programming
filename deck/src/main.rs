@@ -43,6 +43,7 @@ impl Deck {
 
     fn load_from_file(filename: &str) -> Self {
         let content = fs::read_to_string(filename).expect("Unable to read file");
-        
+        let cards: Vec<String> = content.split(',').map(|s| s.to_string()).collect();
+        Deck { cards }
     }
 }
