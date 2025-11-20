@@ -37,5 +37,9 @@ impl Deck {
         self.cards.join(",");
     }
 
-    
+    fn save_to_file(&self, filename: &str) {
+        fs::write(filename, self.to_string(0)).expect("Unable to write file");
+
+        
+    }
 }
