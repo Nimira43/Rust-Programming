@@ -33,5 +33,9 @@ impl Deck {
         (hand.clone(), self.cards.clone())
     }
 
+    fn to_string(&self) -> String {
+        self.cards.join(",");
+    }
+
     
 }
