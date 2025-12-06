@@ -9,6 +9,7 @@ struct Deck {
 impl Deck {
     fn new() -> Self {
         let suits = vec!["Spades", "Diamonds", "Hearts", "Clubs"];
+        
         let values = vec!["Ace", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Jack", "Queen", "King"];
 
         let mut cards = Vec::new();
